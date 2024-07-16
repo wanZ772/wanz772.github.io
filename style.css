@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+body    {
+    background-color: black;
+    /* background-image: url("https://animesher.com/orig/1/145/1456/14564/animesher.com_gif-night-wind-1456418.gif"); */
+    background-image: url("https://images5.alphacoders.com/862/862186.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Creepster", system-ui;
+  /* font-weight: 800; */
+  font-style: bold;
+  justify-content: center;
+}
+
+
+.date_and_time  {
+    position: absolute;
+    color: whitesmoke;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#display_time   {
+    font-size: 60px;
+    border-style: double;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 20px;
+}
+
+#display_date    {
+    position: inherit;
+    font-size: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#credit {
+    position: fixed;
+    color: whitesmoke;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact_developer_class    {
+    color: white;
+    position: absolute;
+    left: 51%;
+    bottom: 1%;
+    transform: translate(-50%, -50%);
+}
+
+#icons  {
+    position: relative;
+    width: 150%;
+    left: -%;
+    /* transform: translate(-50%, -50%); */
+    word-spacing: 3px;
+    /* border-bottom: double 2px; */
+}
+
+.fa-brands--tiktok {
+    display: inline-block;
+    width: 0.88em;
+    height: .85em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23000' d='M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  #under_development    {
+    position: absolute;
+    color: white;
+    left: 50%;
+    font-size: 80px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
