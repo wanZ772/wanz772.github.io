@@ -9,14 +9,30 @@
     <link rel="stylesheet" href="https://fontawesome.com/v5/icons/tiktok?style=brands">
     <script src="functions.js"></script>
 </head>
-<body>
+<body onload="onload_functions()" id="html">
     <div class="date_and_time">
         <div id="display_time">00 : 00 : 00</div>
         <div id="display_date">YY / MM / DD</div>
     </div>
     <center><p><h1 id="under_development">Under Development</h1></p></center>
+    <div class="info">
+        <div id="profile">
+            <img src="https://img.freepik.com/free-vector/skull-black-background_1415-107.jpg" id="profile_image"></img>
+            <p>Code</p>
+            <p id="age">Age: </p>
+            <p>Hi, I have experience in developing frontend and backend systems such as food ordering systems, IOTs, app / web development using Flutter, HTML, CSS, Js. Also, Python for backend. Have business ideas / projects? just contact me.</p>
+        </div>
+        <div id="projects">
+            <!-- <h2 >Projects (More On GitHub)</h2> -->
+            <!-- <p>Smart Farming System (IOT)</p>
+            <p>Smart Home System (IOT)</p>
+            <p>Restaurant System (IOT + web app + server)</p>
+            <p>Hand Gesture (IOT + Python OpenCV)</p> -->
+        </div>
+    </div>
     <div class="contact_developer_class">
         <h3>Contact Developer: </h3>
+        <!-- <br> -->
         <div id="icons">
         <i class="fa fa-instagram" onclick="contact_me(0)" style="font-size:36px"></i>
         <i class="fa fa-github" style="font-size:36px" onclick="contact_me(1)"></i>
@@ -26,7 +42,7 @@
         
         </div>
     </div>
-    
+    <div id="cursor"></div>
     <h4 id="credit">Developed by Code &copy; 2024</h4>
 </body>
 </html>
