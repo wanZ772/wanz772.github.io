@@ -36,6 +36,10 @@ function close_msg_box()    {
     background_music.loop = true;
     
 }
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 function onload_functions()  {
     date = new Date();
     document.getElementById("age") . innerHTML = (date.getFullYear() - 2003) + " y/o";
@@ -59,18 +63,65 @@ function onload_functions()  {
     // }
 
     var cursorOffset = {
-        left : -1.5
+        left : -20
       , top  : 0,
       
      }
      
+     msg_shown = false;
+ 
      document.getElementById("html").addEventListener("mousemove", function (e) {
        var $cursor = document.getElementById('cursor');
-     
+
+       projects_hover = document.getElementById("projects");
+       profile_hover = document.getElementById("profile");
+       social_hover = document.getElementById("contact_developer_id");
+       icons_hover = document.getElementById("icons");
+
        $cursor.style.left = (e.pageX - cursorOffset.left) + 'px';
        $cursor.style.top = (e.pageY - cursorOffset.top) + 'px';
+       msg = document.createElement("p");
+       msg.setAttribute("id", "msg");
+       msg.setAttribute("style", "width:100%; left: "+ 120 +"px; top: "+ 0+"px; opacity:1;");
+
+        
+
+       if (projects_hover.matches(':hover'))    {
+        node = document.createTextNode("Click one of those to see the project");
+        msg.appendChild(node);
+        
+        if (!msg_shown) {
+            
+            $cursor.appendChild(msg);
+            msg_shown = !msg_shown;
+        } 
+       }    else if (profile_hover.matches(':hover'))   {
+        node = document.createTextNode("Get to know me");
+        msg.appendChild(node);
+        if (!msg_shown) {
+            
+            $cursor.appendChild(msg);
+            msg_shown = !msg_shown;
+        } 
+       } else if (social_hover.matches(':hover'))    {
+        node = document.createTextNode("Have any project(s)? Just contact me!");
+        msg.appendChild(node);
+        if (!msg_shown) {
+            
+            $cursor.appendChild(msg);
+            msg_shown = !msg_shown;
+        } 
+       } else   {
+        close_msg();
+    }
      
      });
+     function close_msg()   {
+        document.getElementById("msg") . remove();
+        msg_shown = !msg_shown;
+        // closing_msg = !closing_msg;
+       
+     }
      target = document.getElementById("html");
      box = document.createElement("div");
      box.setAttribute("id", "msg_box");
