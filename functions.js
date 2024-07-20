@@ -18,9 +18,10 @@ tools_list = {
     "Resistance Calculator (Mobile View)": "resistance_calculator",
     "BJT Full Analysis Calculator (Mobile View)": "transistor_calculator",
     "Dynamic URL Reroute":"url_shorterner",
-    "Instagram Favorite Clear":"https://clearfav.onrender.com"
+    "Instagram Favorite Clear":"https://clearfav.onrender.com",
+    "URL Shortener":"url_shorterner"
 };
-
+months_list = "January, February, March, April, May, June, July, August, September, October, November, December";
 function show_projects(id)  {
     window.location.href = projects_list[id];
 }
@@ -36,7 +37,7 @@ function contact_me(id)   {
 function update_current_time()  {
     date = new Date();
     document.getElementById("display_time").innerHTML = date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds();
-    document.getElementById("display_date").innerHTML = date.getDate() + " / " + (date.getMonth() + 1) + " / " + date.getFullYear();
+    document.getElementById("display_date").innerHTML = date.getDate() + " / " + months_list.split(",")[date.getMonth()] + " / " + date.getFullYear();
 }
 
 setInterval(update_current_time, 1000);
