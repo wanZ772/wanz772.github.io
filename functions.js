@@ -22,6 +22,7 @@ tools_list = {
     "URL Shortener":"url_shorterner"
 };
 months_list = "January, February, March, April, May, June, July, August, September, October, November, December";
+day_list = "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday";
 function show_projects(id)  {
     window.location.href = projects_list[id];
 }
@@ -37,7 +38,7 @@ function contact_me(id)   {
 function update_current_time()  {
     date = new Date();
     document.getElementById("display_time").innerHTML = date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds();
-    document.getElementById("display_date").innerHTML = date.getDate() + " / " + months_list.split(",")[date.getMonth()] + " / " + date.getFullYear();
+    document.getElementById("display_date").innerHTML = day_list.split(",")[date.getDay()] + ", " + date.getDate() + " " + months_list.split(",")[date.getMonth()] + " " + date.getFullYear();
 }
 
 setInterval(update_current_time, 1000);
