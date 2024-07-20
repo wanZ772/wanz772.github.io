@@ -121,7 +121,7 @@ function onload_functions()  {
             msg_shown = !msg_shown;
         } 
        } else if (social_hover.matches(':hover'))    {
-        node = document.createTextNode("Have any project(s)? Just contact me!");
+        node = document.createTextNode("Contact me!");
         msg.appendChild(node);
         if (!msg_shown) {
             
@@ -151,7 +151,9 @@ function onload_functions()  {
      box = document.createElement("div");
      box.setAttribute("id", "msg_box");
      node = document.createTextNode("Welcome!");
-     
+     box.appendChild(node);
+     node = document.createTextNode("Please use desktop / desktop view to have a better experience!");
+     box.appendChild(document.createElement("br"));
      box.appendChild(node);
      close_button = document.createElement("button");
      close_button.setAttribute("onclick", "close_msg_box()");
