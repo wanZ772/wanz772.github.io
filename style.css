@@ -55,7 +55,7 @@ html    {
 .contact_developer_class    {
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 5%;
     transform: translateX(-50%);
     padding: 10px;
     color: white;
@@ -179,7 +179,7 @@ html    {
     transition: 1s;
     cursor: alias;
   }
-  #tools h2  {
+  #tools h2, #projects h2  {
     font-size: 30px;
     text-decoration: underline;
     cursor: alias;
@@ -192,11 +192,6 @@ html    {
     
   }
 
-  #projects h2  {
-    font-size: 30px;
-    text-decoration: underline;
-    cursor:pointer;
-  }
   #projects p   {
     font-size: 19px;
     text-decoration: underline;
@@ -258,17 +253,6 @@ html    {
     text-align:left;
     padding-left: 10px;
   }
-  /* #tools:hover    {
-    
-    background-color: black;
-    transition: 1s;
-    cursor: text;
-    width: 450px;
-    height: 500px;
-    z-index: 100;
-    cursor: alias;
-    text-align: start;
-  } */
   #msg_box  {
     position: absolute;
     font-size: 50px;
