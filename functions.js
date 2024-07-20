@@ -15,7 +15,7 @@ projects_list = {
 };
 
 tools_list = {
-    "Resistance Calculator (Mobile View)": "resistance_calculator",
+    "Resistance Calculator (Mobile View)": "resistance_calculato",
     "BJT Full Analysis Calculator (Mobile View)": "transistor_calculator",
     "Dynamic URL Reroute":"url_shorterner",
     "Instagram Favorite Clear":"https://clearfav.onrender.com"
