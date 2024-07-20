@@ -91,6 +91,7 @@ function onload_functions()  {
        profile_hover = document.getElementById("profile");
        social_hover = document.getElementById("contact_developer_id");
        icons_hover = document.getElementById("icons");
+       tools_hover = document.getElementById("tools");
 
        $cursor.style.left = (e.pageX - cursorOffset.left) + 'px';
        $cursor.style.top = (e.pageY - cursorOffset.top) + 'px';
@@ -125,6 +126,14 @@ function onload_functions()  {
             $cursor.appendChild(msg);
             msg_shown = !msg_shown;
         } 
+       } else if (tools_hover.matches(':hover')) {
+        node = document.createTextNode("Wanna get some help? Use my tool!");
+        msg.appendChild(node);
+
+        if (!msg_shown) {
+            $cursor.appendChild(msg);
+            msg_shown = !msg_shown;
+        }
        } else   {
         close_msg();
     }
