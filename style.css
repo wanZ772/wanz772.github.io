@@ -11,7 +11,7 @@ body    {
   font-style: bold;
   justify-content: center;
   /* cursor: none; */
-  cursor: url('assets/cursor.png') 0 0, crosshair;
+  cursor: url('assets/cursor.png') 0 0, wait;
   
 }
 
@@ -59,6 +59,7 @@ body    {
     color: white;
     text-align: center;
     cursor: pointer;
+    z-index: -10;
 }
 #icons  {
     word-spacing: 3px;
@@ -160,6 +161,35 @@ body    {
     cursor: help;
   }
 
+  #tools {
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 1px;
+    width: 350px;
+    height: 400px;
+    border-color: white;
+    margin: 20px;
+    color: white;
+    background-color: rgba(0,0,0,.6);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+    cursor: alias;
+  }
+  #tools h2  {
+    font-size: 30px;
+    text-decoration: underline;
+    cursor: alias;
+  }
+  #tools p   {
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: alias;
+    
+  }
+
   #projects h2  {
     font-size: 30px;
     text-decoration: underline;
@@ -206,7 +236,7 @@ body    {
     width: 450px;
     height: 500px;
     z-index: 100;
-    cursor: auto;
+    cursor: help;
     
   }
 
@@ -218,9 +248,18 @@ body    {
     width: 450px;
     height: 500px;
     z-index: 100;
-    cursor: help;
+    cursor: grab;
   }
-
+  #tools:hover    {
+    
+    background-color: black;
+    transition: 1s;
+    cursor: text;
+    width: 450px;
+    height: 500px;
+    z-index: 100;
+    cursor: alias;
+  }
   #msg_box  {
     position: absolute;
     font-size: 50px;

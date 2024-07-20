@@ -11,11 +11,22 @@ projects_list = {
     "Smart Farming System (IOT)":"https://vt.tiktok.com/ZSYtbTQbQ/",
     "Smart Home System (IOT)":"https://vt.tiktok.com/ZSYtbw5P2/",
     "Restaurant System (IOT + web app + server)": "https://vt.tiktok.com/ZSYt7oQKV/",
-    "Hand Gesture (IOT + Python OpenCV)":"https://github.com/wanZ772"
-}
+    "Hand Gesture (Python + OpenCV)":"assets/hand_gesture_project.mp4"
+};
+
+tools_list = {
+    "Resistance Calculator (Mobile View)": "resistor_calculator",
+    "BJT Full Analysis Calculator (Mobile View)": "transistor_calculator",
+    "Dynamic URL Reroute":"url_shorterner",
+    "Instagram Favorite Clear":"https://clearfav.onrender.com"
+};
 
 function show_projects(id)  {
     window.location.href = projects_list[id];
+}
+
+function open_tools(tool) {
+    window.location.href = tools_list[tool];
 }
 
 function contact_me(id)   {
@@ -57,11 +68,14 @@ function onload_functions()  {
     para.appendChild(node);
     target.appendChild(para);
     }
-    // for (i = 0; i < projects_list.length; i++)  {
-        
-
-    // }
-
+    target = document.getElementById("tools");
+    for (i = 0; i < Object.keys(tools_list).length; i++)   {
+        para = document.createElement("p");
+        node = document.createTextNode(Object.keys(tools_list)[i]);
+        para.setAttribute("onclick", "open_tools('"+ Object.keys(tools_list)[i] +"')")
+        para.appendChild(node);
+        target.appendChild(para);
+    }
     var cursorOffset = {
         left : -20
       , top  : 0,
