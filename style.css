@@ -35,10 +35,12 @@ html    {
 }
 
 #display_date    {
-    position: inherit;
+    position: relative;
     font-size: 20px;
-    left: 50%;
-    transform: translate(-50%);
+    width: 100%;
+    /* left: 50%; */
+    text-align: center;
+    /* transform: translateX(-50%); */
 }
 
 #credit {
@@ -240,7 +242,12 @@ html    {
     
   }
 
-  #projects:hover    {
+  #projects p:hover, #tools p:hover {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #projects:hover, #tools:hover    {
     
     background-color: black;
     transition: 1s;
@@ -251,7 +258,7 @@ html    {
     text-align:left;
     padding-left: 10px;
   }
-  #tools:hover    {
+  /* #tools:hover    {
     
     background-color: black;
     transition: 1s;
@@ -260,7 +267,8 @@ html    {
     height: 500px;
     z-index: 100;
     cursor: alias;
-  }
+    text-align: start;
+  } */
   #msg_box  {
     position: absolute;
     font-size: 50px;
