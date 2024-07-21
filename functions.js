@@ -34,11 +34,23 @@ function open_tools(tool) {
 function contact_me(id)   {
     window.location.href = contact_developer[id];
 }
-
+function time_formating(value)   {
+    if (value < 10) {
+        return "0" + value;
+    }   else    {
+        return value;
+    }
+}
 function update_current_time()  {
     date = new Date();
-    document.getElementById("display_time").innerHTML = date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds();
-    document.getElementById("display_date").innerHTML = day_list.split(",")[date.getDay()] + ", " + date.getDate() + " " + months_list.split(",")[date.getMonth()] + " " + date.getFullYear();
+    hour = time_formating(date.getHours());
+    minute = time_formating(date.getMinutes());
+    second = time_formating(date.getSeconds());
+    
+    today_date = time_formating(date.getDate());
+
+    document.getElementById("display_time").innerHTML = hour + " : " + minute + " : " + second;
+    document.getElementById("display_date").innerHTML = day_list.split(",")[date.getDay()] + ", " + today_date + " " + months_list.split(",")[date.getMonth()] + " " + date.getFullYear();
 }
 
 setInterval(update_current_time, 1000);
