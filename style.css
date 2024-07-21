@@ -197,6 +197,7 @@ html    {
   #projects p:hover, #tools p:hover {
     font-size: 30px;
     margin-left: 20px;
+    color:aqua ;
   }
 
   #projects:hover, #tools:hover    {
