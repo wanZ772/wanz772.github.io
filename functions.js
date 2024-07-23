@@ -23,6 +23,7 @@ tools_list = {
 };
 months_list = "January, February, March, April, May, June, July, August, September, October, November, December";
 day_list = "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday";
+self_description = "Hi, I have experience in developing frontend and backend systems such as food ordering systems, IOTs, app / web development using Flutter, HTML, CSS, Js. Also, Python for backend. Have business ideas / projects? just contact me.";
 function show_projects(id)  {
     window.location.href = projects_list[id];
 }
@@ -54,10 +55,23 @@ function update_current_time()  {
 }
 
 setInterval(update_current_time, 1000);
-var background_music =  new Audio("https://streameo.onrender.com/radio");
+
+async function show_description()   {
+    description = document.getElementById("self_description");
+    for (i = 0; i < self_description.length; i++)   {
+        description.innerHTML += self_description[i] + "_";
+        await new Promise(sleep => setTimeout(sleep, 40));
+        // description.innerHTML = description.innerHTML.replace("_", " |");
+        // await new Promise(sleep => setTimeout(sleep, 10));
+        description.innerHTML = description.innerHTML.replace("_", "");
+    }
+}
+
+var background_music =  new Audio("assets/background_music_2.mp3");
 function close_msg_box()    {
     document.getElementById("msg_box").remove();
     background_music.loop = true;
+    show_description();
     try {
         background_music.play()
     }   catch (e)   {
@@ -70,8 +84,11 @@ function close_msg_box()    {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
 function onload_functions()  {
     date = new Date();
+    // show_description();
     document.getElementById("age") . innerHTML = (date.getFullYear() - 2003) + " y/o";
     target = document.getElementById("projects");
     head = document.createElement("h2");
