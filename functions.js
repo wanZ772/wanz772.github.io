@@ -54,11 +54,16 @@ function update_current_time()  {
 }
 
 setInterval(update_current_time, 1000);
-var background_music =  new Audio("assets/background_music.aac");
+var background_music =  new Audio("https://streameo.onrender.com/radio");
 function close_msg_box()    {
     document.getElementById("msg_box").remove();
-    background_music.play();
     background_music.loop = true;
+    try {
+        background_music.play()
+    }   catch (e)   {
+        background_music.src = "assets/background_music_2.mp3";
+        background_music.play();
+    }
     
 }
 
