@@ -60,7 +60,7 @@ async function show_description()   {
     description = document.getElementById("self_description");
     for (i = 0; i < self_description.length; i++)   {
         description.innerHTML += self_description[i] + "_";
-        await new Promise(sleep => setTimeout(sleep, 40));
+        await new Promise(sleep => setTimeout(sleep, 10));
         // description.innerHTML = description.innerHTML.replace("_", " |");
         // await new Promise(sleep => setTimeout(sleep, 10));
         description.innerHTML = description.innerHTML.replace("_", "");
@@ -81,11 +81,12 @@ function close_msg_box()    {
     
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+msg_shown = false;
+
+function show_helper(msg_text)  {
+    msg = document.getElementById("msg") . innerHTML = msg_text;
+    msg_shown = !msg_shown;
 }
-
-
 function onload_functions()  {
     date = new Date();
     // show_description();
@@ -118,7 +119,7 @@ function onload_functions()  {
       
      }
      
-     msg_shown = false;
+    //  msg_shown = false;
  
      document.getElementById("html").addEventListener("mousemove", function (e) {
        var $cursor = document.getElementById('cursor');
@@ -138,37 +139,41 @@ function onload_functions()  {
         
 
        if (projects_hover.matches(':hover'))    {
-        node = document.createTextNode("Click one of those to see the project");
+        // node = document.createTextNode("Click one of those to see the project");
         msg.appendChild(node);
         
         if (!msg_shown) {
             
             $cursor.appendChild(msg);
-            msg_shown = !msg_shown;
+            show_helper("Click one of these to see the project!");
+            // msg_shown = !msg_shown;
         } 
        }    else if (profile_hover.matches(':hover'))   {
-        node = document.createTextNode("Get to know me");
+        // node = document.createTextNode("Get to know me");
         msg.appendChild(node);
         if (!msg_shown) {
             
             $cursor.appendChild(msg);
-            msg_shown = !msg_shown;
+            show_helper("Get to know me :)");
+            // msg_shown = !msg_shown;
         } 
        } else if (social_hover.matches(':hover'))    {
+        
         node = document.createTextNode("Contact me!");
-        msg.appendChild(node);
+        // msg.appendChild(node);
         if (!msg_shown) {
-            
             $cursor.appendChild(msg);
-            msg_shown = !msg_shown;
+            show_helper("Contact me!");
+            // msg_shown = !msg_shown;
         } 
        } else if (tools_hover.matches(':hover')) {
         node = document.createTextNode("Wanna get some help? Use my tool!");
-        msg.appendChild(node);
+        // msg.appendChild(node);
 
         if (!msg_shown) {
             $cursor.appendChild(msg);
-            msg_shown = !msg_shown;
+            show_helper("Wanna get some help? Use my tool!");
+            // msg_shown = !msg_shown;
         }
        } else   {
         close_msg();
@@ -176,8 +181,13 @@ function onload_functions()  {
      
      });
      function close_msg()   {
-        document.getElementById("msg") . remove();
-        msg_shown = !msg_shown;
+        try {
+            // document.getElementById("msg").innerHTML = "";
+            document.getElementById("msg").remove();
+            msg_shown = !msg_shown;
+        }   catch(e)    {
+            console.log(e);
+        }
         // closing_msg = !closing_msg;
        
      }
