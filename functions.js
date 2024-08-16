@@ -67,7 +67,7 @@ async function show_description()   {
     }
 }
 
-var background_music =  new Audio("assets/background_music_2.mp3");
+var background_music =  new Audio("assets/background_music.aac");
 function close_msg_box()    {
     document.getElementById("msg_box").remove();
     background_music.loop = true;
