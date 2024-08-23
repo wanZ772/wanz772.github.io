@@ -2,17 +2,28 @@ wallpaper_list = ["https://images5.alphacoders.com/862/862186.png", "https://ima
 // alert(wallpaper_list[0]);
 
 contact_developer = ["https://instagram.com/wan.__________", "https://github.com/wanZ772", "https://youtube.com/c/MuhammadNajwan", "https://twitter.com/wanz772", "https://tiktok.com/@wan._77"];
+// projects_list = {
+//     "GitHub":"https://github.com/wanZ772",
+//     "Music Streaming App":"https://streameo.onrender.com",
+//     "Natural Hazard Web App":"https://wanz772.github.io/natural_hazard",
+//     "Natural Hazard backend API":"https://natural-hazard-forecast.onrender.com",
+//     "Mosque Location Finder API":"https://masjid.onrender.com",
+//     "Smart Farming System (IOT)":"https://vt.tiktok.com/ZSYtbTQbQ/",
+//     "Smart Home System (IOT)":"https://vt.tiktok.com/ZSYtbw5P2/",
+//     "Restaurant System (IOT + web app + server)": "https://vt.tiktok.com/ZSYt7oQKV/",
+//     "Hand Gesture (Python + OpenCV)":"assets/hand_gesture_project.mp4"
+// };
+
 projects_list = {
     "GitHub":"https://github.com/wanZ772",
     "Music Streaming App":"https://streameo.onrender.com",
     "Natural Hazard Web App":"https://wanz772.github.io/natural_hazard",
     "Natural Hazard backend API":"https://natural-hazard-forecast.onrender.com",
     "Mosque Location Finder API":"https://masjid.onrender.com",
-    "Smart Farming System (IOT)":"https://vt.tiktok.com/ZSYtbTQbQ/",
-    "Smart Home System (IOT)":"https://vt.tiktok.com/ZSYtbw5P2/",
-    "Restaurant System (IOT + web app + server)": "https://vt.tiktok.com/ZSYt7oQKV/",
+    "Bus Booking System (On going)": "https://github.com/wanz772/bus_reservation_system_production",
     "Hand Gesture (Python + OpenCV)":"assets/hand_gesture_project.mp4"
 };
+
 
 tools_list = {
     "Resistance Calculator (Mobile View)": "resistance_calculator",
