@@ -62,12 +62,12 @@ html    {
     z-index: -10;
 }
 #icons  {
-    word-spacing: 1px;
+    word-spacing: 3px;
     transition: 1s;
 }
 .contact_developer_class:hover #icons, #icons:hover {
     transition: 1s;
-    word-spacing: 30px;
+    word-spacing: 15px;
 }
 
 .fa-brands--tiktok {
