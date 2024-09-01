@@ -78,7 +78,7 @@ async function show_description()   {
     }
 }
 
-var background_music =  new Audio("assets/background_music.aac");
+var background_music =  new Audio("../assets/background_music.aac");
 function close_msg_box()    {
     document.getElementById("msg_box").remove();
     background_music.loop = true;
@@ -86,7 +86,7 @@ function close_msg_box()    {
     try {
         background_music.play()
     }   catch (e)   {
-        background_music.src = "assets/background_music_2.mp3";
+        background_music.src = "../assets/background_music_2.mp3";
         background_music.play();
     }
     
@@ -98,7 +98,6 @@ function show_helper(msg_text)  {
     msg = document.getElementById("msg") . innerHTML = msg_text;
     msg_shown = !msg_shown;
 }
-
 function detectMob() {
     const toMatch = [
         /Android/i,
@@ -115,10 +114,11 @@ function detectMob() {
     });
 }
 function onload_functions()  {
-    if (detectMob())    {
-        // alert("mobile view");
-        location.replace("./mobile/index.html");
-    } 
+    if (!detectMob()) {
+        
+        location.replace('../index.html');
+        
+    }
     date = new Date();
     // show_description();
     document.getElementById("age") . innerHTML = (date.getFullYear() - 2003) + " y/o";

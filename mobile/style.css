@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+html    {
+    
+    background-color: black;
+    /* background-image: url("https://animesher.com/orig/1/145/1456/14564/animesher.com_gif-night-wind-1456418.gif"); */
+    background-image: url("https://images5.alphacoders.com/862/862186.png");
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+    background-position: center center;
+    font-family: "Creepster", system-ui;
+  font-style: bold;
+  justify-content: center;
+  cursor: url('../assets/cursor.png') 0 0, wait;
+  
+}
+
+
+.date_and_time  {
+    position: absolute;
+    color: whitesmoke;
+    left: 50%;
+    top: 10%;
+    width: 280px;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px black;
+}
+
+#display_time   {
+    font-size: 60px;
+    border-style: double;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 20px;
+}
+
+#display_date    {
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#credit {
+    position: absolute;
+    color: whitesmoke;
+    bottom: 100%;
+    left: 50%;
+    padding: 0px;
+    transform: translateX(-50%);
+}
+
+.contact_developer_class    {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    padding: 0px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    z-index: -10;
+}
+#icons  {
+    word-spacing: 1px;
+    transition: 1s;
+}
+.contact_developer_class:hover #icons, #icons:hover {
+    transition: 1s;
+    word-spacing: 30px;
+}
+
+.fa-brands--tiktok {
+    display: inline-block;
+    width: 0.88em;
+    height: .85em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23000' d='M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  #under_development    {
+    position: absolute;
+    color: white;
+    left: 50%;
+    font-size: 80px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.info   {
+    position: absolute;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: flex-end; */
+    width: 100%;
+    top: -20%;
+    left: -2.5%;
+    transform: translateX(50%);
+    transform: translateY(30%);
+
+}
+
+  #profile {
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 1px;
+    width: 350px;
+    height: 400px;
+    border-color: white;
+    margin: 20px;
+    background-color: rgba(0,0,0,.6);
+    transition: 1s;
+    cursor: url('../assets/cursor.png') 0 0, wait;
+
+  }
+#profile p   {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+#profile img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+
+}
+  #projects, #tools {
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 1px;
+    width: 350px;
+    height: 400px;
+    border-color: white;
+    margin: 20px;
+    color: white;
+    background-color: rgba(0,0,0,.6);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+  }
+  #tools h2, #projects h2  {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+
+  #projects p, #tools p   {
+    font-size: 19px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    
+  }
+
+  #cursor {
+    position  : absolute;
+    z-index   : 10000;
+    width     : 150px;
+    height    : 150px;
+    background: url("../assets/cursor.gif");
+    background-color: transparent;
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    align-items: flex-end;
+    text-align: center;
+  }
+
+  #msg  {
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    transition: 1s;
+    font-size: 25px;
+    text-shadow: 5px 5px black;
+    
+  }
+
+  /* #profile:hover    {
+    
+    background-color: black;
+    transition: 1s;
+    width: 450px;
+    height: 500px;
+    z-index: 100;
+     */
+  /* } */
+
+  #projects p:hover, #tools p:hover {
+    font-size: 30px;
+    margin-left: 20px;
+    color:aqua ;
+  }
+
+  /* #projects:hover, #tools:hover    {
+    
+    background-color: black;
+    transition: 1s;
+    width: 450px;
+    height: 500px;
+    z-index: 100;
+    text-align:left;
+    padding-left: 10px;
+  } */
+  #msg_box  {
+    position: absolute;
+    font-size: 50px;
+    height: 100vh;
+    width: 100vw;
+    left: 0%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+    background-color: rgba(255,255,255,.9);
+    z-index: 10;
+  }
+
+  button    {
+    margin-top: 10%;
+    width: 80%;
+    height: 20%;
+    border-radius: 50px;
+    background-color: crimson;
+    font-family: "Creepster", system-ui;
+    font-size: 40px;
+    cursor: pointer;
+  }
