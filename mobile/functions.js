@@ -21,7 +21,7 @@ projects_list = {
     "Natural Hazard backend API":"https://natural-hazard-forecast.onrender.com",
     "Mosque Location Finder API":"https://masjid.onrender.com",
     "Bus Booking System (On going)": "https://github.com/wanz772/bus_reservation_system_production",
-    "Hand Gesture (Python + OpenCV)":"assets/hand_gesture_project.mp4"
+    "Hand Gesture (Python + OpenCV)":"../assets/hand_gesture_project.mp4"
 };
 
 
