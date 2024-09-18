@@ -21,7 +21,11 @@ projects_list = {
     "Natural Hazard backend API":"https://natural-hazard-forecast.onrender.com",
     "Mosque Location Finder API":"https://masjid.onrender.com",
     "Bus Booking System (On going)": "https://github.com/wanz772/bus_reservation_system_production",
-    "Hand Gesture (Python + OpenCV)":"../assets/hand_gesture_project.mp4"
+    "Hand Gesture (Python + OpenCV)":"assets/hand_gesture_project.mp4",
+    "Bus Reservation System": "https://www.linkedin.com/posts/muhammad-najwan-b96064326_bus-reservation-system-original-project-activity-7240237449086394369--VN2?utm_source=share&utm_medium=member_desktop",
+    "MySolat":"https://www.linkedin.com/posts/muhammad-najwan-b96064326_mysolat-v2024-updated-post-this-app-was-activity-7239117922332286976-nnUz?utm_source=share&utm_medium=member_desktop",
+    "Music E-Commerce":"https://wanz772.github.io/music_store",
+    "Smart POT / Farming System": "https://www.linkedin.com/posts/muhammad-najwan-b96064326_mini-project-semester-1-smart-farming-system-activity-7238406170510553090-HmX0?utm_source=share&utm_medium=member_desktop",
 };
 
 
@@ -66,29 +70,36 @@ function update_current_time()  {
 }
 
 setInterval(update_current_time, 1000);
+var background_music =  new Audio("../assets/background_music.aac");
+var typing_sfx = new Audio("../assets/typing.mp3");
+
 
 async function show_description()   {
+    typing_sfx.play();
     description = document.getElementById("self_description");
     for (i = 0; i < self_description.length; i++)   {
-        description.innerHTML += self_description[i] + "_";
-        await new Promise(sleep => setTimeout(sleep, 10));
-        // description.innerHTML = description.innerHTML.replace("_", " |");
-        // await new Promise(sleep => setTimeout(sleep, 10));
-        description.innerHTML = description.innerHTML.replace("_", "");
+        
+        description.innerHTML += self_description[i] + " _";
+        await new Promise(sleep => setTimeout(sleep, 20));
+        description.innerHTML = description.innerHTML.replace(" _", "");
     }
+    description.innerHTML = self_description + "<text id='blinking_cursor'> _</text>";
+    document.getElementById("blinking_cursor") . style . animation = "blink 1s step-start 0s infinite";
+    typing_sfx.pause();
+    background_music.play();
 }
 
-var background_music =  new Audio("../assets/background_music.aac");
+
 function close_msg_box()    {
     document.getElementById("msg_box").remove();
     background_music.loop = true;
     show_description();
-    try {
-        background_music.play()
-    }   catch (e)   {
-        background_music.src = "../assets/background_music_2.mp3";
-        background_music.play();
-    }
+    // try {
+    //     background_music.play()
+    // }   catch (e)   {
+    //     background_music.src = "assets/background_music_2.mp3";
+    //     background_music.play();
+    // }
     
 }
 
@@ -98,6 +109,7 @@ function show_helper(msg_text)  {
     msg = document.getElementById("msg") . innerHTML = msg_text;
     msg_shown = !msg_shown;
 }
+
 function detectMob() {
     const toMatch = [
         /Android/i,
