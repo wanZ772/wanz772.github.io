@@ -13,8 +13,15 @@ html    {
   
 }
 
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+
 
 .date_and_time  {
+  animation-name: blink_animation;
     position: absolute;
     color: whitesmoke;
     left: 50%;
@@ -146,6 +153,7 @@ html    {
     align-items: center;
     text-align: center;
     transition: 1s;
+    overflow-y: scroll;
   }
   #tools h2, #projects h2  {
     font-size: 30px;
