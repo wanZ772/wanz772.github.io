@@ -12,6 +12,20 @@ html    {
   cursor: url('assets/cursor.png') 0 0, wait;
   
 }
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+/* Track */
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+  height: 10px;
+}
 
 @keyframes blink {
   50% {
@@ -153,7 +167,7 @@ html    {
     align-items: center;
     text-align: center;
     transition: 1s;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   #tools h2, #projects h2  {
     font-size: 30px;
