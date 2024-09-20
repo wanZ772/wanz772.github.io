@@ -130,8 +130,6 @@ function onload_functions()  {
         
         location.replace('../index.html');
         
-    }   else    {
-        location.replace('./mobile/index.html');
     }
     date = new Date();
     // show_description();

@@ -128,7 +128,7 @@ function detectMob() {
 function onload_functions()  {
     if (detectMob())    {
         // alert("mobile view");
-        location.replace("/mobile/index.html");
+        location.replace("./mobile/index.html");
     }
     date = new Date();
     // show_description();
