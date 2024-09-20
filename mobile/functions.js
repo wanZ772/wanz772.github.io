@@ -1,7 +1,7 @@
 wallpaper_list = ["https://images5.alphacoders.com/862/862186.png", "https://images3.alphacoders.com/131/1316955.png"];
 // alert(wallpaper_list[0]);
 
-contact_developer = ["https://instagram.com/wan.__________", "https://github.com/wanZ772", "https://youtube.com/c/MuhammadNajwan", "https://www.linkedin.com/in/muhammad-najwan-b96064326/", "https://twitter.com/wanz772", "https://tiktok.com/@wan._77"];
+contact_developer = ["https://instagram.com/mnwanx", "https://github.com/wanZ772", "https://youtube.com/c/MuhammadNajwan", "https://www.linkedin.com/in/muhammad-najwan-b96064326/", "https://twitter.com/wanz772", "https://tiktok.com/@mnwanx"];
 // projects_list = {
 //     "GitHub":"https://github.com/wanZ772",
 //     "Music Streaming App":"https://streameo.onrender.com",
