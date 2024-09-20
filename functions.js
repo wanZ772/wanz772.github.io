@@ -20,7 +20,7 @@ projects_list = {
     "Natural Hazard Web App":"https://wanz772.github.io/natural_hazard",
     "Natural Hazard backend API":"https://natural-hazard-forecast.onrender.com",
     "Mosque Location Finder API":"https://masjid.onrender.com",
-    "Bus Booking System (On going)": "https://github.com/wanz772/bus_reservation_system_production",
+    // "Bus Booking System (On going)": "https://github.com/wanz772/bus_reservation_system_production",
     "Hand Gesture (Python + OpenCV)":"assets/hand_gesture_project.mp4",
     "Bus Reservation System": "https://www.linkedin.com/posts/muhammad-najwan-b96064326_bus-reservation-system-original-project-activity-7240237449086394369--VN2?utm_source=share&utm_medium=member_desktop",
     "MySolat":"https://www.linkedin.com/posts/muhammad-najwan-b96064326_mysolat-v2024-updated-post-this-app-was-activity-7239117922332286976-nnUz?utm_source=share&utm_medium=member_desktop",
@@ -129,7 +129,7 @@ function onload_functions()  {
     if (detectMob())    {
         // alert("mobile view");
         location.replace("./mobile/index.html");
-    } 
+    }
     date = new Date();
     // show_description();
     document.getElementById("age") . innerHTML = (date.getFullYear() - 2003) + " y/o";
