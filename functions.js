@@ -23,7 +23,9 @@ projects_list = {
     // "Bus Booking System (On going)": "https://github.com/wanz772/bus_reservation_system_production",
     "Hand Gesture (Python + OpenCV)":"assets/hand_gesture_project.mp4",
     "Bus Reservation System": "https://www.linkedin.com/posts/muhammad-najwan-b96064326_bus-reservation-system-original-project-activity-7240237449086394369--VN2?utm_source=share&utm_medium=member_desktop",
-    "MySolat":"https://www.linkedin.com/posts/muhammad-najwan-b96064326_mysolat-v2024-updated-post-this-app-was-activity-7239117922332286976-nnUz?utm_source=share&utm_medium=member_desktop",
+    "MySolat (Application)": "https://wanz772.github.io/mysolat_website/MySolat.apk",
+    "MySolat (LinkedIn Documentation)":"https://www.linkedin.com/posts/muhammad-najwan-b96064326_mysolat-v2024-updated-post-this-app-was-activity-7239117922332286976-nnUz?utm_source=share&utm_medium=member_desktop",
+    "MySolat (GitHub Documentation)": "https://github.com/wanz772/mysolat_website",
     "Music E-Commerce":"https://wanz772.github.io/music_store",
     "Smart POT / Farming System": "https://www.linkedin.com/posts/muhammad-najwan-b96064326_mini-project-semester-1-smart-farming-system-activity-7238406170510553090-HmX0?utm_source=share&utm_medium=member_desktop",
 };
