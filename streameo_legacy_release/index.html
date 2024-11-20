@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            Streameo Legacy Releases
+        </title>
+        
+    </head>
+    <body>
+        <script>
+            async function fetch_older_versions() {
+                let versions = await fetch("file:///C:/Users/Admin/projects/github_profile_page/streameo_legacy_release/");
+                let result = await versions.text();
+                console.log(result);
+            }
+        </script>
+        <h1>Streameo Older Version(s)</h1>
+    </body>
+</html>
